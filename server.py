@@ -65,7 +65,6 @@ def submit_form():
             data_of_the_form = request.form.to_dict()
             print(data_of_the_form)
             write_to_csv(data_of_the_form)
-            write_to_file(data_of_the_form)
             return redirect("/thankyou.html")
         except:
             return "Did no save to database"
